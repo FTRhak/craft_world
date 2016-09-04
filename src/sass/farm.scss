@@ -1,0 +1,133 @@
+.farm {
+    background-image: inline-image('../images/locations/farm.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.farm {
+    .field-cell{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        
+    }
+    .cell-1 {
+        left: 335px;
+        top: 289px;
+    }
+    .cell-2 {
+        left: 449px;
+        top: 333px;
+    }
+    .cell-3 {
+        left: 576px;
+        top: 376px;
+    }
+    .cell-4 {
+        left: 409px;
+        top: 225px;
+    }
+    .cell-5 {
+        left: 513px;
+        top: 259px;
+    }
+    .cell-6 {
+        left: 640px;
+        top: 297px;
+    }
+    .cell-7 {
+        left: 466px;
+        top: 167px;
+    }
+    .cell-8 {
+        left: 570px;
+        top: 197px;
+    }
+    .cell-9 {
+        left: 680px;
+        top: 230px;
+    }
+    .cell-10 {
+        left: 514px;
+        top: 120px;
+    }
+    .cell-11 {
+        left: 614px;
+        top: 146px;
+    }
+    .cell-12 {
+        left: 721px;
+        top: 175px;
+    }
+    .cell-click{
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 50px;
+        margin-left: -25px;
+        margin-top: -25px;
+        position: absolute;
+        width: 50px;
+        border-radius: 25px;
+        z-index: 1;
+    }
+    .action-panel {
+        position: absolute;
+        z-index: 3;
+    }
+    .fs {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+
+        z-index: 2;
+    }
+    .action-button {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #FFFFFF;
+        border: 1px solid rgba(10, 200, 25, 0.3);
+        margin-left: -25px;
+        margin-top: -25px;
+        cursor: pointer;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 36px 36px;
+
+        &:hover{
+            border: 1px solid rgba(10, 200, 25, 0.8);
+        }
+    }
+    .action-plant {
+        left: 0px;
+        top: -54px;
+        background-image: inline-image('../images/farm/seed.png');
+    }
+    .action-pour {
+        left: -46px;
+        top: -26px;
+        background-image: inline-image('../images/farm/pour.png');
+    }
+    .action-fertilize {
+        left: 0px;
+        top: -54px;
+        background-image: inline-image('../images/farm/fertilize.png');
+    }
+    .action-remove {
+        left: 46px;
+        top: -26px;
+        background-image: inline-image('../images/farm/remove.png');
+    }
+    .action-harvest {
+        left: -46px;
+        top: -26px;
+        background-image: inline-image('../images/farm/harvest.png');
+    }
+    .action-seed {
+        left: 0px;
+        top: -54px;
+        background-image: inline-image('../images/farm/seed.png');
+    }
+}

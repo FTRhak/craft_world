@@ -1,0 +1,34 @@
+.handicraft-workshop {
+    background-image: inline-image('../images/locations/craft-buildings-empty.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+
+.handicraft-workshop {
+    .door-exit {
+        display: block;
+        height: 300px;
+        left: 20px;
+        position: absolute;
+        top: 170px;
+        width: 45px;
+        &:hover{
+            background-color: rgba(100,100,100,0.2);
+        }
+        z-index: 2;
+    }
+    .workshop-closed {
+        font-size: 36px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+        z-index: 1;
+    }
+}
+.workshop-woodworker {
+    
+}

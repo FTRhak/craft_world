@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+}
+
+.hidden {
+    display: none;
+}
+
+.game-space {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -$gameSpaceWidth/2;
+    margin-top: -$gameSpaceHeight/2;
+}
+@media (max-width: $gameSpaceWidth) {
+    .game-space {
+        position: initial;
+        margin-left: 0;
+        margin-top: 0;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+div[app-game] {
+    position: relative;
+    width: $gameSpaceWidth;
+    height: $gameSpaceHeight;
+}
+
+.settings{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    background-image: inline-image('../images/settings.png');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.user-bag {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background-image: inline-image('../images/bag.png');
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.nav-map-panel {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    .nav-home {
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        background-image: inline-image('../images/nav-home.png');
+        background-size: 48px 48px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .nav-map {
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        background-image: inline-image('../images/nav-map.png');
+        background-size: 48px 48px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+.knowledge-book {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background-image: inline-image('../images/knowledge-book.png');
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.game-states {
+    position: absolute;
+    top: 15px;
+    left: 105px;
+    right: 85px;
+    display: flex;
+    cursor: default;
+    .state {
+        width: 33.33%;
+        height: 20px;
+    }
+    .state-item {
+        background-color: rgba(200, 100, 100, 0.3);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        height: 24px;
+        margin: 0 5px;
+        padding: 5px 5px 5px 30px;
+        text-align: center;
+    }
+    .state-energy {
+        background-image: inline-image('../images/energy.png');
+    }
+    .state-money {
+        background-image: inline-image('../images/money.png');
+    }
+    .state-diamonds {
+        background-image: inline-image('../images/diamond.png');
+    }
+}

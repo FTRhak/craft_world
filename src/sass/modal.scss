@@ -1,0 +1,42 @@
+$popupBorderRadius: 5px;
+
+.modal-popup {
+    position: absolute;
+    width: $popupWidth;
+    height: $popupHeight;
+    top: 50%;
+    left: 50%;
+    margin-top: -$popupHeight / 2;
+    margin-left: -$popupWidth / 2;
+    background-color: #C35432;
+    border-radius: $popupBorderRadius;
+
+    .modal-header{
+        padding: 5px;
+        background-color: rgba(100,100,100,0.3);
+        overflow: hidden;
+        border-radius: $popupBorderRadius $popupBorderRadius 0px 0px;
+    }
+    .modal-title{
+        display: inline-block;
+        height: 100%;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .modal-close{
+        background-color: rgba(100,100,100,0.4);
+        padding: 3px;
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+
+        &:hover{
+            background-color: rgba(100,100,100,0.7);
+        }
+    }
+    .modal-content {
+        overflow: hidden;
+        height: 100%;
+        border-radius: 0px 0px $popupBorderRadius $popupBorderRadius;
+    }
+}

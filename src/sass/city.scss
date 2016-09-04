@@ -1,0 +1,33 @@
+.city {
+    background-image: inline-image('../images/locations/city.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.city {
+    .move-to{
+        position: absolute;
+        color: #111111;
+        text-decoration: none;
+    }
+    .move-to-shop{
+        left: 274px;
+        top: 287px;
+    }
+    .move-to-bar{
+        left: 94px;
+        top: 285px;
+    }
+    .move-to-arena{
+        left: 567px;
+        top: 291px;
+    }
+    .move-to-auction{
+        left: 800px;
+        top: 279px;
+    }
+    .move-to-craft-street{
+        left: 847px;
+        top: 397px;
+    }
+}
