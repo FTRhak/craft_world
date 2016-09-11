@@ -33,6 +33,7 @@
         new ng.router.Route({ path: '/home', component: app.HomeComponent, name: 'Home' }),
         new ng.router.Route({ path: '/home/farm', component: app.HomeFarmController, name: 'HomeFarm' }),
         new ng.router.Route({ path: '/map', component: app.MapComponent, name: 'Map' }),
+        new ng.router.Route({ path: '/location/:id', component: app.LocationComponent, name: 'Location' }),
         
         new ng.router.Route({ path: '/bar', component: app.BarController, name: 'Bar' }),
         new ng.router.Route({ path: '/shop', component: app.ShopController, name: 'Shop' }),

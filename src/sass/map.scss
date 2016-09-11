@@ -1,0 +1,32 @@
+.map {
+    background-image: inline-image('../images/locations/map.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.map{
+    .map-place {
+        color: #FFFFFF;
+        position: absolute;
+    }
+    .location-0{
+        left: 475px;
+        top: 224px;
+    }
+    .location-1{
+        left: 734px;
+        top: 285px;
+    }
+    .location-2{
+        left: 575px;
+        top: 132px;
+    }
+    .location-3{
+        left: 600px;
+        top: 73px;
+    }
+    .location-4{
+        left: 292px;
+        top: 396px;
+    }
+}
